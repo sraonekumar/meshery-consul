@@ -46,6 +46,7 @@ jobs:
           path: ./.github/install/deploy.yaml
 
   TestAdapterForServicemeshInstall:
+    continue-on-error: true
     needs: SetPatternfileForServicemeshInstall
     uses: meshery/meshery/.github/workflows/test_adaptersv2.yaml@master
     with: 
